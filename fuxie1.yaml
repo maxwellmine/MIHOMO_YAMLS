@@ -1,5 +1,5 @@
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}}
-mixed-port: 7890
+mixed-port: 7893
 tcp-concurrent: true
 allow-lan: true
 ipv6: true
