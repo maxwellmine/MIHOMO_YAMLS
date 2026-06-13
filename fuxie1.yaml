@@ -63,8 +63,8 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
   - RULE-SET,Telegram,电报消息
-  - RULE-SET,AppleCN,DIRECT
-  - RULE-SET,AppleProxy,DIRECT
+  - RULE-SET,AppleCN,苹果服务
+  - RULE-SET,AppleProxy,苹果服务
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
