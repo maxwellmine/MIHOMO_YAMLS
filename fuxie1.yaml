@@ -1,26 +1,4 @@
-# Author:https://github.com/Repcz
-# TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-4-27 17:40
-#
-# Mihomo Version ≥ 1.19.23
-# 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
-#
-# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
-#
-# ================
-
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}}
-proxy-providers:
-  Subscribe: # 在此将 "http://your-service-provider" 替换为你的机场订阅，推荐使用 base64 或者 node list
-    url: http://your-service-provider
-    <<: *p
-    #override: # 修改节点前后缀时，需移除前方的 "#" 符号
-      #additional-prefix: "节点前缀"
-      #additional-suffix: "节点后缀"
-  #Subscribe2: {url: http://your-service-provider, <<: *p}
-  #Subscribe3: {url: http://your-service-provider, <<: *p}
-  #Subscribe4: {url: http://your-service-provider, <<: *p}
-
 mixed-port: 7893
 tcp-concurrent: true
 allow-lan: true
