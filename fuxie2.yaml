@@ -7,7 +7,7 @@ c: &c {type: http, behavior: classical, format: text, interval: 86400}
 
 proxy-groups:
 
-  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
+  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 香港均衡,美国节点, 狮城节点,狮城均衡,日本节点, 台湾节点, DIRECT]}
   - {name: 苹果服务, <<: *pg}
   - {name: 电报消息, <<: *pg}
   - {name: 兜底分流, <<: *pg}
