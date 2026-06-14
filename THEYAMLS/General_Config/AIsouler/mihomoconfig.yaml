@@ -274,12 +274,12 @@ rule-providers:
     url: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/twitter.mrs'
     path: './ruleset/twitter_ip.mrs'
     path-in-bundle: 'geo/geoip/twitter.mrs'
-  gfw:
+  geolocation-!cn:
     <<: *rule_providers_domain
     format: mrs
-    url: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/gfw.mrs'
-    path: './ruleset/gfw.mrs'
-    path-in-bundle: 'geo/geosite/gfw.mrs'
+    url: 'https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs'
+    path: './ruleset/geolocation-!cn.mrs'
+    path-in-bundle: 'geo/geosite/geolocation-!cn.mrs'
   cn_additional:
     <<: *rule_providers_domain
     format: mrs
@@ -573,7 +573,7 @@ proxy-groups:
     icon: 'https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png'
 
   - name: 'Emby'
-    <<: [*group_common_select, *proxies_default]
+    <<: [*group_common_select, *proxies_direct]
     icon: 'https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png'
 
   - name: 'Spotify'
@@ -733,7 +733,7 @@ rules:
   - RULE-SET,netflix_ip,Netflix,no-resolve
 
   # 兜底规则
-  - RULE-SET,gfw,默认代理
+  - RULE-SET,geolocation-!cn,默认代理
   - RULE-SET,cn_additional,直连
   - RULE-SET,cn_ip,直连
   - MATCH,默认代理

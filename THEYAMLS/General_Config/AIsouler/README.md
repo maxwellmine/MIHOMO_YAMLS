@@ -6,48 +6,17 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `mihomoConfigLite.yaml` | `mihomoconfig.yaml` |
+| 特性 | `mihomoconfig.yaml` | `mihomoConfigLite.yaml` |
 | :--- | :--- | :--- |
-| **大小** | 15.4 KB | 24.6 KB |
+| **大小** | 24.6 KB | 14.3 KB |
 | **混合端口** | - | - |
 | **面板地址** | [::]:9090 | [::]:9090 |
 | **运行模式** | rule | rule |
 | **TUN** | ✅ | ✅ |
-| **策略组** | **22** | **46** |
-| **规则数** | **20** | **41** |
+| **策略组** | **46** | **22** |
+| **规则数** | **41** | **15** |
 
 ## 📄 配置详情
-
-#### 📝 mihomoConfigLite.yaml
-- **路径**: `mihomoConfigLite.yaml` | **大小**: 15.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (22个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| ♻️ 自动选择 | `url-test` |
-| 👆 AI | `select` |
-| 👆 Telegram | `select` |
-| 👆 广告拦截 | `select` |
-| 👆 直连 | `select` |
-| 👆 香港 | `select` |
-| ♻️ 香港-自动选择 | `url-test` |
-| 👆 日本 | `select` |
-| ♻️ 日本-自动选择 | `url-test` |
-| 👆 美国 | `select` |
-| ♻️ 美国-自动选择 | `url-test` |
-| 👆 新加坡 | `select` |
-| ♻️ 新加坡-自动选择 | `url-test` |
-| 👆 台湾省 | `select` |
-| ♻️ 台湾省-自动选择 | `url-test` |
-| 👆 低倍率节点 | `select` |
-| ♻️ 低倍率节点-自动选择 | `url-test` |
-| 👆 高倍率节点 | `select` |
-| ♻️ 高倍率节点-自动选择 | `url-test` |
-| ... | 还有 2 个 |
-</details>
 
 #### 📝 mihomoconfig.yaml
 - **路径**: `mihomoconfig.yaml` | **大小**: 24.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
@@ -78,4 +47,35 @@
 | 👆 TikTok | `select` |
 | 👆 Netflix | `select` |
 | ... | 还有 26 个 |
+</details>
+
+#### 📝 mihomoConfigLite.yaml
+- **路径**: `mihomoConfigLite.yaml` | **大小**: 14.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (22个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 AI | `select` |
+| 👆 Telegram | `select` |
+| 👆 广告拦截 | `select` |
+| 👆 直连 | `select` |
+| 👆 香港 | `select` |
+| ♻️ 香港-自动选择 | `url-test` |
+| 👆 日本 | `select` |
+| ♻️ 日本-自动选择 | `url-test` |
+| 👆 美国 | `select` |
+| ♻️ 美国-自动选择 | `url-test` |
+| 👆 新加坡 | `select` |
+| ♻️ 新加坡-自动选择 | `url-test` |
+| 👆 台湾省 | `select` |
+| ♻️ 台湾省-自动选择 | `url-test` |
+| 👆 低倍率节点 | `select` |
+| ♻️ 低倍率节点-自动选择 | `url-test` |
+| 👆 高倍率节点 | `select` |
+| ♻️ 高倍率节点-自动选择 | `url-test` |
+| ... | 还有 2 个 |
 </details>
